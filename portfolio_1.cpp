@@ -1,60 +1,60 @@
 #include <stdio.h>
 int number1, number2, number3, number4;
  
-void addition() {  //µ¡¼À 
+void addition() {  //ë§ì…ˆ 
 	number3 = number1 + number2; 
 }
 
-void subtraction() { //»¬¼À 
+void subtraction() { //ëº„ì…ˆ 
 	number3 = number1 - number2;	
 }
 
-void multiplication() {  //°ö¼À 
+void multiplication() {  //ê³±ì…ˆ 
 	number3 = number1 * number2;	
 }
 
-void division() {  //³ª´°¼À 
+void division() {  //ë‚˜ëˆ—ì…ˆ 
 	number3 = number1 / number2;
 	number4 = number1 % number2;	
 }
 
 int main(void) {
 	
-	printf ("°è»ê ¹æ¹ı°ú ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä. \n1.°ö¼À 2.»¬¼À 3.°ö¼À 4.³ª´°¼À \n : ");
+	printf ("ê³„ì‚° ë°©ë²•ê³¼ ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”. \n1.ê³±ì…ˆ 2.ëº„ì…ˆ 3.ê³±ì…ˆ 4.ë‚˜ëˆ—ì…ˆ \n : ");
 	
 	int number;
 	scanf ("%d", &number);
 	
 	if ( number == 1 ) {
-		printf ("´õÇÒ ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		printf ("ë”í•  ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		scanf ("%d %d", &number1, &number2);
 		addition();
-	printf ("°á°ú°ª : %d", number3); 		
+	printf ("ê²°ê³¼ê°’ : %d", number3); 		
     }
     
 	else if ( number == 2 ) {
-		printf ("»¬ ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		printf ("ëº„ ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		scanf ("%d %d", &number1, &number2);
 		subtraction();
-	printf ("°á°ú°ª : %d", number3); 		
+	printf ("ê²°ê³¼ê°’ : %d", number3); 		
     }
     
     else if ( number == 3 ) {
-		printf ("°öÇÒ ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		printf ("ê³±í•  ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		scanf ("%d %d", &number1, &number2);
 		multiplication();
-	printf ("°á°ú°ª : %d", number3); 		
+	printf ("ê²°ê³¼ê°’ : %d", number3); 		
     }
     
     else if ( number == 4 ) {
-		printf ("³ª´­ ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		printf ("ë‚˜ëˆŒ ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		scanf ("%d %d", &number1, &number2);
 		division();
-	printf ("°á°ú°ª : %d.%d", number3, number4); 		
+	printf ("ê²°ê³¼ê°’ : %d.%d", number3, number4); 		
     }
     
     else 
-	printf ("Àß¸øµÈ ÀÔ·Â°ªÀÔ´Ï´Ù."); 
+	printf ("ì˜ëª»ëœ ì…ë ¥ê°’ì…ë‹ˆë‹¤."); 
 
 	return 0;
 }
