@@ -3,11 +3,11 @@ int a, number, integer, sum;
 int subject[] = {0, };
  
 int main (void) {
-	printf ("ÃÑ ¸î °ú¸ñÀÔ´Ï±î? : ");
+	printf ("ì´ ëª‡ ê³¼ëª©ìž…ë‹ˆê¹Œ? : ");
 	scanf ("%d", &number);
 	
 	if ( number > 0 ) {
-	printf ("°¢°¢ÀÇ °ú¸ñÀÇ Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä. : ");
+	printf ("ê°ê°ì˜ ê³¼ëª©ì˜ ì ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”. : ");
 	for ( a=0; a<number; a++ ) {
 		scanf ("%d", &subject[a]);
 	}
@@ -20,6 +20,6 @@ int main (void) {
  	return 0;
     }
     
-    printf ("Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù.");
+    printf ("ìž˜ëª»ëœ ìž…ë ¥ìž…ë‹ˆë‹¤.");
     return 0;
 }
